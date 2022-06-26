@@ -1,0 +1,48 @@
+#include<stdio.h>
+void main()
+{
+    int n,c;
+    char s;
+    printf("choise 1 : CSE \nchoice 2 : ECE \nchoice 3 : EEE\n");
+    printf("enter the choice : ");
+    scanf("%d",&c);
+    printf("enter the rank : ");
+    scanf("%d",&n);
+    
+    switch(c)
+    {
+        case 1:
+        printf("CSE : ");
+        if(n>=1&&n<=500)
+        {
+            printf("free seat\n");
+        }
+        else
+        {
+           printf("fee- $3000/-\n");
+        }
+        break;
+        case 2:
+        printf("ECE : ");
+        if(n>=1&&n<=250)
+        {
+            printf("free seat\n");
+        }
+        else
+        {
+            printf("fee - $2000/-\n");
+        }
+        break;
+        case 3:
+        printf("EEE : ");
+        if(n>=1&&n<=250)
+        {
+            printf("free seat\n");
+        }
+        else
+        {
+            printf("fee - $1500/-\n");
+        }
+        break;
+    }
+}
